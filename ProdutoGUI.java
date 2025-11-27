@@ -38,7 +38,7 @@ public class ProdutoGUI extends Application {
 	   vbox.setSpacing(10); // Distancia entre os componentes
 
 	   HBox nomeProdutoBox = new HBox();
-	   nomeProdutoBox.setSpacing(10); // Deixa um espçamento entre o nome e caixa de digitação
+	   nomeProdutoBox.setSpacing(10); // Deixa um espaçamento entre o nome e caixa de digitação
 	   Label nomeLabel = new Label("Produto:");
 	   nomeInput = new TextField();
 	   nomeProdutoBox.getChildren().addAll(nomeLabel, nomeInput);
@@ -132,7 +132,7 @@ public class ProdutoGUI extends Application {
 	    vbox.getChildren().addAll(nomeProdutoBox,quantidadeBox, precoBox, statusBox, buttonBox, tableView);
 
 	    Scene scene = new Scene(vbox, 800, 600);
-	    //scene.getStylesheets().add("styles-produtos.css"); // Adiciona a folha de estilos
+	    scene.getStylesheets().add("styles-produtos.css"); // Adiciona a folha de estilos
 	    palco.setScene(scene);
 	    palco.show();
 	}
